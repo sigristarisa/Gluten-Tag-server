@@ -8,4 +8,30 @@ generator client {
 datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
+  shadowDatabaseUrl = env("SHADOW_DATABASE_URL")
+}
+
+model Sourdough {
+  id               Int  @id @default(autoincrement())
+  starterName      String
+  starter          Int
+  water            Int
+  salt             Int
+  flour            Int
+  doughweight      Int
+  starterCondition String @db.VarChar(30)
+  autolyseTime     String
+  bulkFermentationTime String
+  stretchAndFold   Int
+  shaping          Int
+  proofing         String
+  bakeWithLid      String
+  bakeWithoutLid   String
+  ovenSpring       Int
+  crust            Int
+  crumb            Int
+  taste            String @db.VarChar(30)
+  positive         String @db.VarChar(50)
+  negative         String @db.VarChar(50)
+  note             String @db.VarChar(100)
 }
