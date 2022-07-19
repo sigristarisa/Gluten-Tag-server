@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sigristarisa/Yeastie-Boys-server.git"
+    "url": "git+https://github.com/sigristarisa/Gluten-Tag-server.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sigristarisa/Yeastie-Boys-server/issues"
+    "url": "https://github.com/sigristarisa/Gluten-Tag-server/issues"
   },
-  "homepage": "https://github.com/sigristarisa/Yeastie-Boys-server#readme",
+  "homepage": "https://github.com/sigristarisa/Gluten-Tag-server#readme",
   "dependencies": {
     "@prisma/client": "^4.0.0",
     "cors": "^2.8.5",
@@ -23,6 +23,7 @@
     "morgan": "^1.10.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.19"
+    "nodemon": "^2.0.19",
+    "prisma": "^4.1.0"
   }
 }
