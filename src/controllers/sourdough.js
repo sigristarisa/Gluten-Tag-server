@@ -29,7 +29,7 @@ const setStarterName = async (req, res) => {
       note: "",
     },
   });
-  res.json({ data: createdSourdough });
+  res.json({ sourdough: createdSourdough });
 };
 
 module.exports = {
